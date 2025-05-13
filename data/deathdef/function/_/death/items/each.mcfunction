@@ -10,7 +10,7 @@ execute store result storage deathdef:_ var.death.vanish_check[-1].Slot byte 1 r
 
 # vanish check if == 15 items:
 scoreboard players add *death.vanish_count _deathdef 1
-execute if score *death.vanish_count _deathdef matches 15 in varchunk:chunk summon llama run function deathdef:_/death/vanish_check/main
+execute if score *death.vanish_count _deathdef matches 15 in varchunk:chunk positioned 1 1 1 summon llama run function deathdef:_/death/vanish_check/main
 
 data remove storage deathdef:_ var.death.items[-1]
 execute if data storage deathdef:_ var.death.items[0] run function deathdef:_/death/items/each

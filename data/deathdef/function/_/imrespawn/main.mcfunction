@@ -14,8 +14,10 @@ data modify storage deathdef:_ var.imrespawn.death_x set from storage deathdef:_
 data modify storage deathdef:_ var.imrespawn.death_y set from storage deathdef:_ var.imrespawn.last_pos[1]
 data modify storage deathdef:_ var.imrespawn.death_z set from storage deathdef:_ var.imrespawn.last_pos[2]
 
+# do death:
 function deathdef:_/imrespawn/death_proxy with storage deathdef:_ var.imrespawn
 
+# set last pos in pdata:
 function deathdef:_/imrespawn/set_last_pos with storage deathdef:_ var.imrespawn
 
 data remove storage deathdef:_ var.imrespawn
