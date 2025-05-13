@@ -1,0 +1,6 @@
+
+pdata\PlayerData :< {
+    deathdef: {
+        last_pos: spaceVector
+    }
+}
