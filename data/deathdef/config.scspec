@@ -1,0 +1,5 @@
+{
+    keep_inventory: bool
+        = false
+        # effectively replaces gamerule 'keepInventory', as the gamerule must be turned on in order for deathdef to function.
+}

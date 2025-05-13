@@ -1,0 +1,13 @@
+# deathdef <*> death
+% AS AT [player]
+--------------------
+-> items[]: itemSlot
+-> vanishing_items[]: itemSlot
+-> xp: int
+--------------------
+.
+--------------------
+- TODO: doc
+--------------------
+.
+--------------------
