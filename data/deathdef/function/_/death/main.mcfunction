@@ -9,12 +9,6 @@ data merge storage deathdef:hook {pre_death:{items:[], vanishing_items:[], xp:0}
 
 execute unless data storage deathdef:config {keep_inventory:true} run function deathdef:_/death/populate
 
-setblock ~ ~ ~ barrel
-data modify block ~ ~ ~ Items set from storage deathdef:hook pre_death.items
-setblock ~ ~1 ~ barrel
-data modify block ~ ~1 ~ Items set from storage deathdef:hook pre_death.vanishing_items
-
-
 # HOOK <> pre_death:
 function #deathdef:hook/pre_death
 
