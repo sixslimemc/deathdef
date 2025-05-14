@@ -4,3 +4,10 @@ pdata\PlayerData :< {
         last_pos: spaceVector
     }
 }
+
+EquipmentSlot = 'offhand' | 'head' | 'chest' | 'legs' | 'feet'
+
+PlayerItem := containedItem << {
+    is_equipment: bool
+    Slot: byte | EquipmentSlot
+}
