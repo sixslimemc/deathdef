@@ -1,0 +1,5 @@
+{
+    const: {
+        equipment_slots: ['offhand', 'head', 'chest', 'legs', 'feet']
+    }
+}
