@@ -3,8 +3,14 @@
 # ./main
 #--------------------
 
-# init items:
+# get inventory:
 data modify storage deathdef:_ var.death.items set from entity @s Inventory
+
+# get equipment:
+data modify storage deathdef:_ var.death.equip_slots set from storage deathdef:_ const.equipment_slots
+execute if data storage deathdef:_ var.death.equip_slots[0] run function deathdef:_/death/equip_slots/each
+
+# init items:
 data modify storage deathdef:hook pre_death.vanishing_items set from storage deathdef:_ var.death.items
 
 # populate {@hook pre_death.items} and {@hook pre_death.vanishing_items}:

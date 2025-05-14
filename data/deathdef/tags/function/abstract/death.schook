@@ -1,8 +1,8 @@
 # deathdef <*> death
 % AS AT [player]
 --------------------
--> items[]: PlayerItem
--> vanishing_items[]: PlayerItem
+-> items[]: DeathItem
+-> vanishing_items[]: DeathItem
 -> xp: int
 --------------------
 .

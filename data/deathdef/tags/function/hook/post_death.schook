@@ -1,12 +1,12 @@
 # deathdef <*> post_death
 % AS AT [player]
 --------------------
--> items[]: PlayerItem
--> vanishing_items[]: PlayerItem
+-> items[]: DeathItem
+-> vanishing_items[]: DeathItem
 -> xp: int
 --------------------
-<- items[]: PlayerItem
-<- vanishing_items[]: PlayerItem
+<- items[]: DeathItem
+<- vanishing_items[]: DeathItem
 <- xp: int
 --------------------
 - TODO: doc

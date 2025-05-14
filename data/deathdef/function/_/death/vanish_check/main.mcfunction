@@ -14,7 +14,7 @@ data modify entity @s Items set from storage deathdef:_ var.death.vanish_check
 
 # get kill items:
 kill @s
-execute as @e[type=item, distance=0..0.5] if items entity @s container.0 *[minecraft:custom_data~{deathdef:{vanish_item:true}}] run function deathdef:_/death/vanish_check/on_item with entity @s Item.components.'minecraft:custom_data'.deathdef
+execute as @e[type=item, distance=0..0.5] if items entity @s container.0 *[minecraft:custom_data~{deathdef:{vanish_item:true}}] run function deathdef:_/death/vanish_check/on_item
 
 # reset:
 scoreboard players set *death.vanish_count _deathdef 0

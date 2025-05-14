@@ -7,7 +7,7 @@ pdata\PlayerData :< {
 
 EquipmentSlot = 'offhand' | 'head' | 'chest' | 'legs' | 'feet'
 
-PlayerItem := containedItem << {
+DeathItem := containedItem << {
     is_equipment: bool
     Slot: byte | EquipmentSlot
 }
