@@ -5,7 +5,6 @@
 
 scoreboard objectives add _deathdef dummy
 
-scoreboard objectives add _deathdef.death deathCount
 scoreboard objectives add _deathdef.xp xp
 
 gamerule keepInventory true

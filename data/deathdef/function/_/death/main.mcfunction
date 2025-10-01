@@ -1,8 +1,6 @@
 #> deathdef:_/death/main
 #--------------------
-# _/tick
-#- AS [player]
-#- AT [death location]
+# idied <> died
 #--------------------
 
 data merge storage deathdef:hook {pre_death:{items:[], vanishing_items:[], xp:0}}
@@ -21,5 +19,4 @@ data remove storage deathdef:abstract/in death
 data modify storage deathdef:hook post_death set from storage deathdef:hook pre_death
 function #deathdef:hook/post_death
 
-scoreboard players reset @s _deathdef.death
 data remove storage deathdef:_ var.death
