@@ -10,8 +10,6 @@ data modify storage slimecore:in manifest.display.summary set value "TODO"
 data modify storage slimecore:in manifest.url.this set value "TODO"
 data modify storage slimecore:in manifest.author set value {name:"SixSlime", url:"https://github.com/sixslime"}
 
-data modify storage slimecore:in manifest.expected_order set value {tick:1b}
-
 data modify storage slimecore:in manifest.dependencies append value {pack:"varchunk", url:"TODO", version:{major:1, minor:0, patch:0}}
 data modify storage slimecore:in manifest.dependencies append value {pack:"pdata", url:"TODO", version:{major:1, minor:0, patch:0}}
 data modify storage slimecore:in manifest.dependencies append value {pack:"idied", url:"TODO", version:{major:1, minor:0, patch:0}}
