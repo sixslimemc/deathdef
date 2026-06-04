@@ -1,7 +1,11 @@
 
 dispatch minecraft:storage[deathdef:config] to struct Config {
-    /// if true, players in spectator mode will not trigger the death implementation, and will keep all items/xp. (This is default Minecraft behavior.)
+    /// If true, players in spectator mode will not trigger the death implementation and will keep all items/xp. (Default Minecraft behavior.)
     ///
     /// Default: true
-    ignore_spectator_deaths: boolean
+    ignore_spectator_deaths: boolean,
+    /// Acts as a replacement for the 'keep_inventory' gamerule; the actual gamerule MUST be enabled in order for DeathDef to function.
+    ///
+    /// Default: false
+    keep_inventory: boolean,
 }
