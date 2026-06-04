@@ -1,0 +1,8 @@
+
+dispatch minecraft:storage[deathdef:abstract/in] to struct AbstractIn {
+
+}
+
+dispatch minecraft:storage[deathdef:abstract/out] to struct AbstractOut {
+
+}

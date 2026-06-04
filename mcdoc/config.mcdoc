@@ -1,0 +1,4 @@
+
+dispatch minecraft:storage[deathdef:config] to struct Config {
+
+}

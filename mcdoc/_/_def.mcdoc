@@ -1,0 +1,24 @@
+
+struct VariableRegister {
+    [string]: any
+}
+dispatch minecraft:storage[deathdef:_] to struct {
+    /// top level
+    t: VariableRegister,
+    /// impl
+    v: VariableRegister,
+    /// util
+    u: VariableRegister,
+    /// in-scope temp
+    x: VariableRegister,
+    // data
+    data: struct PrivateData {
+        
+    }
+}
+dispatch minecraft:storage[deathdef:_/in] to struct {
+    [any]: any
+}
+dispatch minecraft:storage[deathdef:_/out] to struct {
+    [any]: any
+}

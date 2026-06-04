@@ -1,0 +1,7 @@
+
+
+dispatch minecraft:storage[deathdef:api] to struct Api {
+
+}
+
+
