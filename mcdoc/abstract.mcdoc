@@ -1,8 +1,8 @@
 
 dispatch minecraft:storage[deathdef:abstract/in] to struct AbstractIn {
-
+    death: super::abstract::death::In,
 }
 
 dispatch minecraft:storage[deathdef:abstract/out] to struct AbstractOut {
-
+    death: super::abstract::death::Out,
 }

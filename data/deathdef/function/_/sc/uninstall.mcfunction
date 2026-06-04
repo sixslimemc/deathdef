@@ -10,3 +10,5 @@ data remove storage deathdef:_ x
 data remove storage deathdef:_ t
 data remove storage deathdef:_ v
 data remove storage deathdef:_ u
+data remove storage deathdef:_ data
+data remove storage deathdef:_ const

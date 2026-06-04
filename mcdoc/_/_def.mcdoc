@@ -1,4 +1,6 @@
 
+use super::super::def::EquipmentSlot
+
 struct VariableRegister {
     [string]: any
 }
@@ -14,6 +16,10 @@ dispatch minecraft:storage[deathdef:_] to struct {
     // data
     data: struct PrivateData {
         
+    },
+    // constants
+    const: struct Constants {
+        equipment_slots: [EquipmentSlot]
     }
 }
 dispatch minecraft:storage[deathdef:_/in] to struct {

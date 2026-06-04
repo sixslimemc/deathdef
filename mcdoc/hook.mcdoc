@@ -1,4 +1,5 @@
 
 dispatch minecraft:storage[deathdef:hook] to struct Hook {
-
+    pre_call: super::hook::pre_call::Hook,
+    post_call: super::hook::pre_call::Hook,
 }
