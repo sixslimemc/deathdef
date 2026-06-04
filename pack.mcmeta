@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "TODO: DESC",
+    "description": "Provides an abstract interface to re-implement player death. (Library)",
     "min_format": 101,
     "max_format": 101
   }
