@@ -4,8 +4,9 @@
 #--------------------
 
 # get items:
-data modify storage deathdef:_ t.death.player.inventory set from entity @s Inventory
-data modify storage deathdef:_ t.death.player.equipment set from entity @s equipment
+data modify storage deathdef:_ x.player set from entity @s
+data modify storage deathdef:_ t.death.player.inventory set from storage deathdef:_ x.player.Inventory
+data modify storage deathdef:_ t.death.player.equipment set from storage deathdef:_ x.player.equipment
 
 data modify storage deathdef:_ t.death.items set value []
 
