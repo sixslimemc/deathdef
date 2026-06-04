@@ -24,4 +24,4 @@ function deathdef:_/main/death/populate_drops/final_items/do
 function six:player/get_true_xp
 data modify storage deathdef:hook pre_call.xp set from storage six:out get_true_xp.result
 
-function deathdef:_/main/death/populate_drops/clear with storage deathdef:_ t.death.player
+function deathdef:_/main/death/populate_drops/clear with storage deathdef:hook pre_call
