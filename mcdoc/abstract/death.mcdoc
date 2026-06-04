@@ -1,0 +1,9 @@
+use super::super::def::DeathDropInfo
+
+struct In {
+    ...DeathDropInfo
+}
+
+struct Out {
+
+}

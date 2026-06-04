@@ -1,0 +1,6 @@
+use super::super::def::DeathDropInfo
+
+/// Should be treated as read-only.
+struct Hook {
+    ...DeathDropInfo
+}

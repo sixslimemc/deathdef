@@ -17,8 +17,6 @@ data modify storage slimecore:in manifest.pack.display.links.info set value "htt
 data modify storage slimecore:in manifest.pack.display.links.versions set value "https://github.com/sixslimemc/deathdef/releases"
 
 data modify storage slimecore:in manifest.pack.entrypoints set value []
-# data modify storage slimecore:in manifest.pack.entrypoints append value {id:"ID", before:[{pack_ref:"PACK", id:"ID"}]}
-
 data modify storage slimecore:in manifest.pack.preload_entrypoints set value []
 data modify storage slimecore:in manifest.pack.abstract_declarations set value []
 # DEBUG
@@ -28,6 +26,8 @@ data modify storage slimecore:in manifest.pack.abstract_implementations set valu
 
 data modify storage slimecore:in manifest.pack.dependencies set value []
 data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"idied", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"https://github.com/sixslimemc/idied/releases/download/v0.1.0/sixslime.idied.0.1.0.zip", version:{major:0, minor:1, patch:0}}}
+data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"six", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"https://github.com/sixslimemc/six/releases/download/v0.1.0/sixslime.six.0.1.0.zip", version:{major:0, minor:1, patch:0}}}
+data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"varchunk", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"https://github.com/sixslimemc/varchunk/releases/download/v0.1.0/sixslime.varchunk.0.1.0.zip", version:{major:0, minor:1, patch:0}}}
 
 data modify storage slimecore:in manifest.pack.is_library set value true
 

@@ -1,0 +1,6 @@
+use super::super::def::DeathDropInfo
+
+/// Changes are passed to '#deathdef:abstract/death'.
+struct Hook {
+    ...DeathDropInfo
+}

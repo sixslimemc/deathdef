@@ -1,0 +1,22 @@
+
+type DeathItemEntry = struct {
+    item: ::java::world::item::ItemStack,
+    slot: (byte | EquipmentSlot),
+    is_equipment: boolean,
+}
+
+enum(string) EquipmentSlot {
+    Head = "head",
+    Chest = "chest",
+    Legs = "legs",
+    Feet = "feet",
+    Offhand = "offhand",
+    Body = "body",
+    Saddle = "saddle",
+}
+
+type DeathDropInfo = struct {
+    items: [DeathItemEntry],
+    vanishing_items: [DeathItemEntry],
+    xp: int,
+}
