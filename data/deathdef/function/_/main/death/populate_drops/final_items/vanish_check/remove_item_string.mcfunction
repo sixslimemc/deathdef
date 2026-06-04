@@ -4,5 +4,4 @@
 # ./on_item
 #--------------------
 
-$say $(slot)
 $data remove storage deathdef:hook pre_call.vanishing_items[{slot:"$(slot)"}]
