@@ -18,9 +18,9 @@ data modify storage slimecore:in manifest.pack.display.links.versions set value 
 
 data modify storage slimecore:in manifest.pack.entrypoints set value []
 data modify storage slimecore:in manifest.pack.preload_entrypoints set value []
+
 data modify storage slimecore:in manifest.pack.abstract_declarations set value []
-# DEBUG
-# data modify storage slimecore:in manifest.pack.abstract_declarations append value {id:"death"}
+data modify storage slimecore:in manifest.pack.abstract_declarations append value {id:"death"}
 
 data modify storage slimecore:in manifest.pack.abstract_implementations set value []
 
