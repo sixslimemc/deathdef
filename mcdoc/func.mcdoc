@@ -1,8 +1,10 @@
 
 dispatch minecraft:storage[deathdef:in] to struct In {
-
+    restore_items: super::function::util::restore_items::In,
+    get_macro_slot: super::function::util::get_macro_slot::In,
 }
 
 dispatch minecraft:storage[deathdef:out] to struct Out {
-
+    restore_items: super::function::util::restore_items::Out,
+    get_macro_slot: super::function::util::get_macro_slot::Out,
 }

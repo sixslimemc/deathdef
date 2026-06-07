@@ -20,7 +20,10 @@ dispatch minecraft:storage[deathdef:_] to struct {
     },
     // constants
     const: struct Constants {
-        equipment_slots: [EquipmentSlot]
+        equipment_slots: [EquipmentSlot],
+        equipment_slot_map: struct {
+            [EquipmentSlot]: string,
+        }
     }
 }
 dispatch minecraft:storage[deathdef:_/in] to struct {

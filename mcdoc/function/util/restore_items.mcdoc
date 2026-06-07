@@ -1,0 +1,13 @@
+// execute AS [player]
+
+use super::super::super::def::DeathItemEntry
+
+struct In {
+    items: [DeathItemEntry]
+}
+
+struct Out {
+
+}
+
+type Return = 1
