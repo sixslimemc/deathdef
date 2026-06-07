@@ -5,6 +5,9 @@
 
 tellraw @a [{color:red, text:"[!!!] Uninstallation for 'deathdef' has not yet been implemented!"}]
 
+execute if data storage deathdef:config {keep_inventory:true} run gamerule keep_inventory true
+execute unless data storage deathdef:config {keep_inventory:true} run gamerule keep_inventory false
+
 scoreboard objectives remove _deathdef
 data remove storage deathdef:_ x
 data remove storage deathdef:_ t
