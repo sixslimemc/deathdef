@@ -1,5 +1,6 @@
 #> deathdef:_/sc/init
 # @ INIT
+scoreboard players set *init _deathdef 1
 
 data modify storage deathdef:config ignore_spectator_deaths set value true
 
