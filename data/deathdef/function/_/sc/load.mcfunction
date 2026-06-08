@@ -3,8 +3,6 @@
 
 scoreboard objectives add _deathdef dummy
 
-gamerule keep_inventory true
-
 # init:
 execute unless score *init _deathdef matches 1 run function deathdef:_/sc/init
 
@@ -23,3 +21,5 @@ data modify storage deathdef:_ const.equipment_slot_map.feet set value "armor.fe
 data modify storage deathdef:_ const.equipment_slot_map.offhand set value "weapon.offhand"
 data modify storage deathdef:_ const.equipment_slot_map.body set value "armor.body"
 data modify storage deathdef:_ const.equipment_slot_map.saddle set value "saddle"
+
+gamerule keep_inventory true
