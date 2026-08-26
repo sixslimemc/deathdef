@@ -19,10 +19,10 @@ data modify storage slimecore:in manifest.pack.display.links.versions set value 
 data modify storage slimecore:in manifest.pack.entrypoints set value []
 data modify storage slimecore:in manifest.pack.preload_entrypoints set value []
 
-data modify storage slimecore:in manifest.pack.abstract_declarations set value []
-data modify storage slimecore:in manifest.pack.abstract_declarations append value {id:"death"}
+data modify storage slimecore:in manifest.pack.contract_declarations set value []
+data modify storage slimecore:in manifest.pack.contract_declarations append value {id:"death"}
 
-data modify storage slimecore:in manifest.pack.abstract_implementations set value []
+data modify storage slimecore:in manifest.pack.contracts_satisfied set value []
 
 data modify storage slimecore:in manifest.pack.dependencies set value []
 data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"idied", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"https://github.com/sixslimemc/idied/releases/download/v0.1.0/sixslime.idied.0.1.0.zip", version:{major:0, minor:1, patch:0}}}
